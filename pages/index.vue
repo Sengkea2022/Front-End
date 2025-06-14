@@ -1,8 +1,9 @@
 <template>
     <div>
         <UCard>
-            indexដសាដ
+            selectedIndex
         </UCard>
+
     </div>
 </template>
 <script setup>

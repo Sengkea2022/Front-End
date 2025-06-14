@@ -10,6 +10,7 @@ const is2Xl = useMediaQuery('(min-width: 1536px)');
 const logo = computed(() => ([
   {
     label: 'Logo',
+    slot: 'logo-img'
   },
 ]));
 const menu = computed(() => ([
@@ -48,13 +49,21 @@ const collapsed = ref(true);
 const toggleCollapse = () => {
   collapsed.value = !collapsed.value;
 }
+const imageLoaded =ref(true)
+const onError = () => {
+ imageLoaded.value = false
+}
 </script>
 <template>
   <div class="sm:flex justify-between">
     <div class="sm:flex">
       <div class="flex justify-between">
         <div class="flex-1 flex justify-center">
-          <UNavigationMenu :items="logo" orientation="horizontal"/>
+          <UNavigationMenu :items="logo" orientation="horizontal">
+            <template #logo-img>
+              <NuxtImg v-if="imageLoaded" src="/OIP.webp" height="50" alt="logo" @error="onError" class="mr-2"/>
+            </template>
+          </UNavigationMenu>
         </div>
         <div class="sm:hidden">
           <UNavigationMenu :items="menu" orientation="horizontal" />
