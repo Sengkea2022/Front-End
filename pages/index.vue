@@ -1,9 +1,15 @@
 <template>
     <div>
         <UCard>
-            indexដសាដ
+            <div class="text-primary">
+                jfdskjfldskfjkld
+            </div>
         </UCard>
     </div>
-</template>
+</template >
 <script setup>
+definePageMeta({
+    layout: 'auth',
+    name: 'home'
+})
 </script>
