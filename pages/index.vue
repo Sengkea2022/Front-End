@@ -1,7 +1,7 @@
 <template>
     <div>
         <UCard>
-            index
+            indexដសាដ
         </UCard>
     </div>
 </template>

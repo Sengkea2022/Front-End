@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
-html, body {
+body {
     font-family: "Kantumruy Pro", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 16px;
+    /* font-optical-sizing: auto;
+    font-size: 16px; */
   }
