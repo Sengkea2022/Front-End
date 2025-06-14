@@ -1,9 +1,8 @@
 <template>
     <div>
-        <UCard>
-            index
-        </UCard>
+index
     </div>
 </template>
 <script setup>
+
 </script>

@@ -1,9 +1,10 @@
 <template>
-  here is guest layout
-    <slot/>
+    <div>
+login
+    </div>
 </template>
 <script setup>
 definePageMeta({
-  layout: "guest",
+    layout: 'guest'
 });
 </script>
