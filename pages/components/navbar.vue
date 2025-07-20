@@ -49,9 +49,9 @@ const collapsed = ref(true);
 const toggleCollapse = () => {
   collapsed.value = !collapsed.value;
 }
-const imageLoaded = ref(true)
+const imageLoaded =ref(true)
 const onError = () => {
-  imageLoaded.value = false
+ imageLoaded.value = false
 }
 </script>
 <template>
@@ -61,7 +61,7 @@ const onError = () => {
         <div class="flex-1 flex justify-center">
           <UNavigationMenu :items="logo" orientation="horizontal">
             <template #logo-img>
-              <NuxtImg v-if="imageLoaded" src="/OIP.webp" height="50" alt="logo" @error="onError" class="mr-2" />
+              <NuxtImg v-if="imageLoaded" src="/OIP.webp" height="50" alt="logo" @error="onError" class="mr-2"/>
             </template>
           </UNavigationMenu>
         </div>
